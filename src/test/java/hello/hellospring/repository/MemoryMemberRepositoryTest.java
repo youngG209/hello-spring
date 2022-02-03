@@ -25,7 +25,7 @@ class MemoryMemberRepositoryTest {
     @Test
     void saveTest() {
         Member member = new Member();
-        member.setName("Spring");
+        member.setName("SpringTest");
 
         Long saveId = memberService.join(member);
 
@@ -36,10 +36,10 @@ class MemoryMemberRepositoryTest {
     @Test
     void findAllTest() {
         Member member1 = new Member();
-        member1.setName("spring1");
+        member1.setName("spring1Test");
 
         Member member2 = new Member();
-        member2.setName("spring1");
+        member2.setName("spring1Test");
 
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,
